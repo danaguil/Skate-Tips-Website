@@ -1,0 +1,312 @@
+/* Define the height and width of the HTML element */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Center-align the heading element */
+h1 {
+  text-align: center;
+}
+h2 {
+  padding: 20px 0;
+}
+
+/* Default styling for all paragraphs */
+p {
+  margin: 0 auto; /* Center the paragraph */
+  width: 30%;
+  padding: 20px 20px;
+}
+
+/* Media query for screens smaller than 1024px */
+@media (max-width: 1024px) {
+  p {
+    width: 70%; /* Increase the width for medium-sized screens */
+  }
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  p {
+    width: 90%; /* Further increase the width for small screens */
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  p {
+    width: 95%; /* Maximum width for very small screens */
+  }
+}
+
+/* Styling for the body */
+body {
+  /* Add a white background color */
+  background-color: #FFFFFF;
+
+  /* Customize the font, size, and color for text */
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  color: #333333;
+}
+
+.banner {
+  /* Add margin around the image */
+  margin: 20px;
+
+  /* Set height and width for the image */
+  height: 100%;
+  width: 100%;
+  max-width: 450px;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
+* { /* no underline when adding link */
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul { /* style and to move around */
+  margin: left;
+}
+
+ul li { /* style and move individual */
+  list-style: none;
+  display: inline-block; /*next to each other */
+  line-height: 100px; /* centered in box */
+  
+}
+
+ul li a { /* styling the text*/
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e1e1e;
+  padding: 0 30px; /* 0 for top and botton 20 padding for left and right */
+}
+
+ul li a:hover { /* styling the text*/
+ color: green;
+}
+
+/* Container for the header */
+.header-container {
+  /* Set the position to relative */
+  position: relative;
+
+  /* Display flex items in a column layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Indent text by 40px */
+  text-indent: 40px;
+
+  /* Add padding to the top */
+  padding-top: 50px;
+
+  /* Add margin to the bottom */
+  margin-bottom: 20px;
+
+  /* Center-align text horizontally */
+  text-align: center;
+
+  /* Align items at the center */
+  align-items: center;
+}
+
+/* Container for the gallery */
+.gallary-container {
+  /* Set the position to relative */
+  position: relative;
+
+  /* Center-align text horizontally */
+  text-align: center;
+}
+
+/* Styling for the header image */
+#header-img {
+  /* Display as a flex container */
+  display: flex;
+
+  /* Center-align content horizontally */
+  justify-content: center;
+}
+
+/* Hide the header image by default */
+.header-img {
+  display: none;
+
+  /* Add margin around the image */
+  margin: 10px;
+
+  /* Set height and width for the image */
+  height: 80%;
+  width: 70%;
+  max-width: 400px;
+}
+
+/* Show the header image when 'show' class is applied */
+.header-img.show {
+  display: block;
+
+  /* Apply fadeInOut animation */
+  animation: fadeInOut 7s ease-in-out forwards; /* Combine fadeIn and fadeOut animations */
+}
+
+/* Keyframes for the fadeInOut animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1; /* Keep the image fully visible for the remaining time */
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Additional styling for the first header item */
+.header-item:nth-of-type(1) {
+ /* Display flex items in a column layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Align items at the center */
+  align-items: center;
+}
+
+/* Style for image descriptions */
+.image-description {
+  /* Add margin */
+  margin-top: 10px;
+  /* Display flex items in a column layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Align items at the center */
+  align-items: center;
+}
+
+/* Style for each image description */
+.description {
+  /* Hide descriptions by default */
+  display: none;
+  
+}
+
+.user-choice ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.user-choice ul li a{
+  color:black;
+}
+
+.user-choice a:hover{
+ color: green;
+}
+
+/* Styling for the flat trick page */
+.trick-img {
+  /* Add margin around the image */
+  margin: 10px;
+
+  /* Set height and width for the image */
+  height: 80%;
+  width: 70%;
+  max-width: 400px;
+}
+
+.flat-tricks ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flat-tricks ul li{
+  list-style: none;
+}
+
+.flat-tricks ul li a{
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e1e1e;
+  padding: 0 20px; /* 0 for top and bottom, 20 padding for left and right */
+}
+
+.flat-tricks ul li a:hover {
+  color: green;
+}
+
+#footer {
+  position:relative;
+  height: 100px;
+  margin-top: -100px;
+  clear: both;
+  padding: 0 30px; /* 0 for top and botton 20 padding for left and right */
+  /* Add margin to the bottom */
+  margin-bottom: 70px;
+}
+
+.footer-content ul li a{
+  color:black;
+  font-size: 16px;
+}
+
+.footer-content a:hover{
+  color:green;
+}
+
+
+/*Styling for information (videos,titles,paragraphs)*/
+.information {
+  /* Set the position to relative */
+  position: relative;
+
+  /* Display flex items in a column layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Add padding to the top */
+  padding-top: 50px;
+
+  /* Add margin to the bottom */
+  margin-bottom: 20px;
+
+  /* Center-align text horizontally */
+  text-align: center;
+
+  /* Align items at the center */
+  align-items: center;
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.tenor-gif-embed {
+  width: 50%;
+  padding: 80px 70px;
+}
+
+
